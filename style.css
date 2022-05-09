@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+
+body {
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #ededed;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__filter {
+    display: flex;
+    
+}
+.portfolio__filter .active,
+.portfolio__filter li:hover {
+    background-color: rgb(77, 106, 100);
+    color: #fff;
+    box-shadow: 0 0 10px rgb(77, 106, 100);
+}
+
+.portfolio__filter li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(127, 177, 170);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__list li {
+    width: 30%;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(125, 175, 175);
+    display: none;
+}
+
+.portfolio__list .active{
+    display: block;
+}
+
+
+
